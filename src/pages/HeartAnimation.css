@@ -1,0 +1,29 @@
+.floating-heart {
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+    animation: float-heart 1.5s ease-out forwards;
+  }
+  
+  .floating-heart.heart {
+    background-color: #ff6b81;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 70%, 18% 100%, 0% 38%);
+  }
+  
+  .floating-heart.cart {
+    background-color: #f59e0b;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 70%, 18% 100%, 0% 38%);
+  }
+  
+  @keyframes float-heart {
+    0% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100px) scale(1.5);
+    }
+  }
+  
